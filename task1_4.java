@@ -32,6 +32,7 @@
   //   ※詳しくはJava2章にて紹介します。
 
   public static void main(String[] args){
+    
     // 以下の変数「name」「pass」を使用して、②〜⑤の条件を満たす処理を記述してください。
         // nameとpassはログイン画面からの入力値だと想定してみましょう。
 
