@@ -14,8 +14,8 @@
    // 定数（アカウント情報）
        // ① 登録されている名前（USER_NAME）とパスワード（USER_PASSWORD）を定数で定義してください。
 
-    private static final String USER_NAME = "Miya";
-    private static final String USER_PASSWORD = "1225";
+    private static final String USER_NAME = "alice";
+    private static final String USER_PASSWORD = "alice123";
 
     // 定数（メッセージ）
     private static final String CONST_MSG_SUCCESS = "ログイン成功です。";
@@ -33,8 +33,8 @@
     // 以下の変数「name」「pass」を使用して、②〜⑤の条件を満たす処理を記述してください。
         // nameとpassはログイン画面からの入力値だと想定してみましょう。
 
-    String name = "Miya";
-    String pass = "1225";
+    String name = "alice";
+    String pass = "alice123";
 
     if (name == USER_NAME && pass == USER_PASSWORD){
       System.out.println(CONST_MSG_SUCCESS);
@@ -46,5 +46,4 @@
       System.out.println(CONST_MSG_ERROR_INPUT);
     }
   }
-
  }
