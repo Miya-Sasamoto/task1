@@ -10,6 +10,8 @@
  *
  */
 
+ import java.util.Scanner;
+
  public class task1_4{
    // 定数（アカウント情報）
        // ① 登録されている名前（USER_NAME）とパスワード（USER_PASSWORD）を定数で定義してください。
@@ -36,11 +38,17 @@
     String name = "alice";
     String pass = "alice123";
 
-    if (name == USER_NAME && pass == USER_PASSWORD){
+    Scanner in = new Scanner(System.in);
+    System.out.println("enter your username");
+    name = in.nextLine();
+    System.out.println("enter your password");
+    pass = in.nextLine();
+
+    if (name.equals(USER_NAME) && pass.equals(USER_PASSWORD)){
       System.out.println(CONST_MSG_SUCCESS);
-    } else if ( name == USER_NAME || pass != USER_PASSWORD){
+    } else if ( name.equals(USER_NAME) || !pass.equals(USER_PASSWORD)){
       System.out.println(CONST_MSG_ERROR_PASS);
-    } else if (name != USER_NAME || pass == USER_PASSWORD){
+    } else if (!name.equals(USER_NAME) || pass.equals(USER_PASSWORD)){
       System.out.println(CONST_MSG_ERROR_NAME);
     } else {
       System.out.println(CONST_MSG_ERROR_INPUT);
